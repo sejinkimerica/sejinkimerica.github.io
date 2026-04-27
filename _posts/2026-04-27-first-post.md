@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Jekull로 첫 글을 씁니다."
+title: "Jekyll로 첫 글을 씁니다."
 date: 2026-04-27 15:45 +0900
 categories: [수업, 일기]
 tags: [jekyll, markdown]
