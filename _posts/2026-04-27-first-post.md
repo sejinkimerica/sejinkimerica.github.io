@@ -11,6 +11,6 @@ author: 김세진
 
 오늘은 **Jekyll**을 활용해 첫 블로그 글을 씁니다.
 
-! [김세진의 책상 풍경](/assets/img/desk.jpg)
+![김세진의 책상 풍경](/assets/img/desk.jpg)
 
 앞으로 수업에서 배운 내용을 이곳에 정리할 예정입니다.
