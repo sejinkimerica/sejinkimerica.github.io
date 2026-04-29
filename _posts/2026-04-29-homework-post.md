@@ -17,6 +17,6 @@ author: 김세진
 
 ![강아지 사진](/assets/img/maru.jpg)
 
-이 링크를 누르시면 hello.js로 연결됩니다. 
-[hello.js](/hello.js.html)
 안녕히 계세요.
+
+<script src="/assets/js/hello.js"></script>
