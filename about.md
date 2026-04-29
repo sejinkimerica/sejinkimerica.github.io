@@ -14,4 +14,4 @@ title: "소개"
 HTML, CSS, JavaScript, Jekyll을 배우며
 만들고 있습니다.
 
-<script src="/assets/js/hello.js"></script>
+<script src="/assets/assets/js/hello.js"></script>

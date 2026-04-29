@@ -19,4 +19,3 @@ author: 김세진
 
 안녕히 계세요.
 
-<script src="/assets/assets/js/hello.js"></script>
