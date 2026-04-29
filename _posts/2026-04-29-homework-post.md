@@ -15,6 +15,6 @@ author: 김세진
 취미는 요리와 운동입니다.
 귀여운 강아지 마루를 키우고 있습니다.
 
-![강아지 사진] (/assets/img/maru.jpg)
+![강아지 사진](/assets/img/maru.jpg)
 
 안녕히 계세요.
