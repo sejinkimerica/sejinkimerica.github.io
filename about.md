@@ -17,7 +17,7 @@ title: "소개"
 
 [발레 동영상](https://youtu.be/bHen1G-0O1g?si=vZI9vIqlfhvjd-nA)
 
-##이 사이트에 대하여
+## 이 사이트에 대하여
 
 이 사이트는 **인문데이터과학개론** 수업에서
 *HTML, CSS, JavaScript, Jekyll*을 배우며
