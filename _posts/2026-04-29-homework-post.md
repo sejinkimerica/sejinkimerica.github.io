@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "자기소개 포스트입니다"
+title: "마루를 소개합니다"
 date: 2026-04-29 22:52 +0900
 categories: [과제, 자기소개]
 tags: [jekyll, markdown, newpost]
