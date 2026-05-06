@@ -8,7 +8,7 @@ function countChar(text, target) {
 }
 
 const text = "이상의 「날개」는 1936년에 발표된 단편소설이다.";
-const target = ["이", "의", "날", "개", "소"];
+const targets = ["이", "의", "날", "개", "소"];
 
 const counts = targets.map(t => countChar(text, t));
 console.log(counts);
