@@ -23,6 +23,7 @@ for (year of years) {
 }
 
 
+
 // Q2
 const works = ["날개", "오감도", "지주회시", "종생기", "권태"];
 console.log(works.length)
@@ -39,6 +40,8 @@ for (let i = 0; i < long.length; i++) {
     console.log(`${i + 1}번째 작품: ${long[i]}`);
 }
 
+
+
 // Q3
 function countChar(text, target) {
     let count = 0
@@ -53,3 +56,27 @@ return count;
 countChar("박씨는 이씨에게 시집간 김씨의 외사촌 동생이다.", "씨")
 countChar("이상의 「날개」는 1936년 작품이다.", "이")
 countChar("banana", "a")
+
+
+
+// Q4
+const text = "이상의 「날개」는 1936년에 발표된 단편소설이다.";
+const targets = ["이", "의", "날", "개", "소"];
+
+const counts = targets.map(t => countChar(text, t));
+console.log(counts);
+
+for (let i = 0; i < targets.length; i++) {
+    console.log(`'${targets[i]}': ${counts[i]}번`);
+}
+
+const frequent = targets.filter(t => countChar(text, t) >= 2);
+console.log(frequent);
+
+let maxIdx = 0;
+for (let i = 1; i < counts.length; i++) {
+    if (counts[i] > counts[maxIdx]) maxIdx = i
+    }
+
+const toptarget = targets[maxIdx];
+console.log(`가장 자주 나온 글자: '${toptarget}' ${counts[maxIdx]}번`);
