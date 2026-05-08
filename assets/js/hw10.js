@@ -6,13 +6,13 @@ function classifyEra(year) {
     if (year < 1910) {
         return (`${year}: '개화기 이전'`);
     }
-    else if (1910 <= year < 1945) {
+    else if (year < 1945) {
         return (`${year}: '일제강점기'`);
     }
-    else if (1945 <= year < 1990) {
+    else if (year < 1990) {
         return (`${year}: '해방 이후-현대'`);
     }
-    else (year >= 1990) {
+    else {
         return (`${year}: '동시대'`);
     }
 }
