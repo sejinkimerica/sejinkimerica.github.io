@@ -16,3 +16,7 @@ function classifyEra(year) {
         return (`${year}: '동시대'`);
     }
 }
+
+const years = [1908, 1936, 1972, 2025];
+for (year of years) {
+console.log(`${year}년: ${classifyEra(year)}`)
