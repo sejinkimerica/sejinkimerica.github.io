@@ -4,16 +4,16 @@
 //Q1
 function classifyEra(year) {
     if (year < 1910) {
-        return (`${year}: '개화기 이전'`);
+        return ('개화기 이전');
     }
     else if (year < 1945) {
-        return (`${year}: '일제강점기'`);
+        return ('일제강점기');
     }
     else if (year < 1990) {
-        return (`${year}: '해방 이후-현대'`);
+        return ('해방 이후-현대');
     }
     else {
-        return (`${year}: '동시대'`);
+        return ('동시대');
     }
 }
 
