@@ -38,3 +38,18 @@ console.log(long);
 for (let i = 0; i < long.length; i++) {
     console.log(`${i + 1}번째 작품: ${long[i]}`);
 }
+
+// Q3
+function countChar(text, target) {
+    let count = 0
+for (const ch of text) {
+    if (ch === target) {
+        count++;
+    }
+}
+console.log(`'${text}' 에서 '${target}' 는 ${count} 번 등장합니다.`);
+return count;
+}
+countChar("박씨는 이씨에게 시집간 김씨의 외사촌 동생이다.", "씨")
+countChar("이상의 「날개」는 1936년 작품이다.", "이")
+countChar("banana", "a")
