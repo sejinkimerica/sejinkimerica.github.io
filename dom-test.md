@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "DOM 테스트"
-permalink" /dom.test/
+permalink: "/dom.test/"
 ---
 
 <h2 id = .text-title> 분석 대상 </h2>
