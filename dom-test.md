@@ -13,4 +13,4 @@ permalink" /dom.test/
 <p id = "top-char"></p>
 
 <!--계산결과로 채울 부분-->
-<script src="/asset/js/dom-freq.js></script>
+<script src="/asset/js/dom-freq.js"></script>
