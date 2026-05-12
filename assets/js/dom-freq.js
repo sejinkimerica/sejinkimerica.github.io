@@ -1,4 +1,4 @@
-//asset
+// assets/js/dom-freq.js
 function countChar(text, target) {
     let count = 0;
     for (const ch of text) {
@@ -26,6 +26,6 @@ if (counts[i] > counts[maxIdx]) maxIdx = i;
 }
 
 const topChar = document.querySelector('#tup-char');
-topChar.textContent = `가장 자주 나온 글자: ${targets[maxIdx]} )${counts[maxIdx]}번`;
+topChar.textContent = `가장 자주 나온 글자: ${targets[maxIdx]} (${counts[maxIdx]}번)`;
 topChar.style.fontWeight = "bold";
 topChar.style.color = "crimson";
