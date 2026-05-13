@@ -13,4 +13,4 @@ permalinK: /freq-app/
 </form> 
 <ul id="freq-list"></ul>
 <p id="top-char"></p> 
-<script src="/assets/js/freq-app.js></script>
+<script src="/assets/js/freq-app.js"></script>
