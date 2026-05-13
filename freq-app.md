@@ -10,8 +10,7 @@ permalinK: /freq-app/
     <p>셀 글자(쉼표로 구분):</p>
     <input id = "target-input" tupe = "text" value = "이,의,날,개,소">
     <button type="submit">분석</button>
-    </form> 
+</form> 
 <ul id="freq-list"></ul>
-<p id="top-char"></p>
-    
+<p id="top-char"></p> 
 <script src="/assets/js/freq-app.js></script>
