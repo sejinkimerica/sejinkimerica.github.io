@@ -27,7 +27,7 @@ form.addEventListener("submit", (e) => {
 function drawList(targets, counts) {
     list.textContent = "";
 
-    for (let I = 0; i < targets.length; i++) {
+    for (let i = 0; i < targets.length; i++) {
         const li = document.createElement("li")
         li.textContent = `${targets[i]}: ${counts[i]}번)`;
         list.appendChild(li);
