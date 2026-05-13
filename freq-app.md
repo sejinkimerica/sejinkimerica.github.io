@@ -11,7 +11,7 @@ permalinK: /freq-app/
     <input id = "target-input" tupe = "text" value = "이,의,날,개,소">
     <button type="submit">분석</button>
     </form> 
-    <ul id="freq-list"></ul>
-    <p id="top-char"></p>
+<ul id="freq-list"></ul>
+<p id="top-char"></p>
     
 <script src="/assets/js/freq-app.js></script>
