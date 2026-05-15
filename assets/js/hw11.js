@@ -1,5 +1,5 @@
 // [숙제11] 동적 웹 페이지 구현
-// 2024-10136 김세진 
+// 2024-10136 김세진
 
 // Q1
 const themeBtn = document.querySelector("#theme-btn");
