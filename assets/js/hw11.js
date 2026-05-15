@@ -6,5 +6,8 @@ const themeBtn = document.querySelector("#theme-btn");
 const q1Box = document.querySelector("#q1-box");
 themeBtn.addEventListener("click", () => { 
     q1Box.classList.toggle("dark");
-    themeBtn.classList.toggle.textContet = "라이트 모드";
+    if (themeBtn.textContent = "다크 모드") {
+        themeBtn.textContent = "라이트 모드"
+    }
+    else {themeBtn.textContent = "다크 모드"}
 });
