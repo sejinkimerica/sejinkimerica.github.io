@@ -18,7 +18,7 @@ const count = document.querySelector("#q2-count");
 const warn = document.querySelector("#q2-warn");
 input.addEventListener("input", (e) => {
     count.textContent = e.target.value.length;
-    if (length >= 100) {
+    if (e.target.value.length >= 100) {
         warn.textContent = "100자를 넘었습니다.";
         warn.style.color = "crimson";
     }
