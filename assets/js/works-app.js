@@ -30,7 +30,7 @@ function analyze(work){
         .then(response=> response.text()) 
         .then(text=> { 
             nowBox.textContent = `[${work.title}]분석결과`; 
-            constcounts = targets.map(t=> countChar(text,t));
+            const counts = targets.map(t=> countChar(text,t));
             drawList(targets,counts); 
             drawTop(targets,counts); 
         }); 
