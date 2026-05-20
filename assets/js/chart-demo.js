@@ -1,4 +1,4 @@
-const canvas = document.querySelector("my-chart");
+const canvas = document.querySelector("#my-chart");
 
 new Chart(canvas, {
     type: "bar",
