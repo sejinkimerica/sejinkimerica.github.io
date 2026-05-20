@@ -26,7 +26,7 @@ function drawChart(rows) {
         data: {
             labels: labels,
             datasets: [{label: "작품 편수", 
-                        data: counts,
+                        data: [127,42, 18, 89],
                         backgroundColor: [
                             "rgba(255,99, 132,0.6)", //분홍
                             "rgba(54, 162, 235,0.6)", //파랑
