@@ -15,7 +15,6 @@ fetch("/data/sillok.json")
             datasets: [{label: "권수", 
                         data: counts,
                         backgroundColor: "rgba(54, 162, 235,0.6)", //파랑
-                        
                     }],
         },
         options: {
