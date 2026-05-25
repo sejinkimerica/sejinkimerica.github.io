@@ -50,7 +50,9 @@ fetch("/data/nobel-literature.csv")
         type: "line",
         data: {
             labels: labels,
-            datasets: [{data: counts,
+            datasets: [{
+                        label: "긍그"
+                        data: counts,
                         borderColor: "rgba(54, 162, 235, 1)",
                         backgroundColor: "rgba(54, 162, 235, 0.2)", //파랑
                     }],
