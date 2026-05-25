@@ -50,8 +50,7 @@ fetch("/data/nobel-literature.csv")
         type: "line",
         data: {
             labels: labels,
-            datasets: [{label: "권수", 
-                        data: counts,
+            datasets: [{data: counts,
                         borderColor: "rgba(54, 162, 235, 1)",
                         backgroundColor: "rgba(54, 162, 235, 0.2)", //파랑
                     }],
@@ -59,8 +58,8 @@ fetch("/data/nobel-literature.csv")
         options: {
                 plugins: {
                     title: { display: true, text: "노벨문학상 수상자 수 추이 (10년 단위)" },
-                    legend: { display: true },
                 },
+                
                 scales: {
                     x: { title: { display: true, text: "연대" } },
                     y: { 
@@ -68,6 +67,6 @@ fetch("/data/nobel-literature.csv")
                         title: { display: true, text: "수상자 수" } 
                     } 
                 }
-            }
+        }
         });
     })
