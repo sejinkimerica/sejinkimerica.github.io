@@ -12,13 +12,17 @@ fetch("/data/sillok.json")
         type: "bar",
         data: {
             labels: labels,
-            datasets: [{label: "왕 이름", 
+            datasets: [{label: "권수", 
                         data: counts,
                         backgroundColor: "rgba(54, 162, 235,0.6)", //파랑
                         
                     }],
         },
         options: {
+            plugins: {
+                title: {display: true, text: "조선왕조실록 왕대별 권수"},
+                legend: {display: true},
+            },
             scales: { y: { beginAtZero: true}}
         }
     });
