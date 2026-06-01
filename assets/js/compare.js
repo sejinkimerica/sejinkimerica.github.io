@@ -64,7 +64,7 @@ Promise.all([
     }
 );
 
-function drawChart(selectior, top, color) {
+function drawChart(selector, top, color) {
     const canvas = document.querySelector(selector);
     new Chart(canvas, {
         type: "bar",
