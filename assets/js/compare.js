@@ -27,7 +27,7 @@ function removeStopwords(words, stopWords) {
 // 4. 단어들의 배열을 {단어: 빈도} 꼴의 객체로 만들기
 function countWords(words) {
     const counts = {}; // 빈 객체 초기화
-    for (const word in words) {
+    for (const word of words) {
         counts[word] = (counts[word] || 0) + 1;
     }
     return counts;
@@ -65,7 +65,7 @@ Promise.all([
 );
 
 function drawChart(selectior, top, color) {
-    const canvas = document.querySelector(selector)
+    const canvas = document.querySelector(selector);
     new Chart(canvas, {
         type: "bar",
         data: {
