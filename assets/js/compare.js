@@ -78,7 +78,7 @@ function drawChart(selector, top, color) {
           },
           options: {
             indexAxis: "y",
-            maintainAspectRation: false, // 비율 보존 안함 --> 아래로 긴 그림
+            maintainAspectRatio: false, // 비율 보존 안함 --> 아래로 긴 그림
             scales: {
                 x: {beginAtZero: true}, // 막대그래프 옵션: 0부터 시작
                 y: {ticks: {autoSkip: false}}
