@@ -4,3 +4,10 @@
     {"title": "진달래꽃", "file":"/data/jindalae.txt"}, 
     {"title": "서시", "file": "/data/seosi.txt"} 
  ]
+
+[
+    {"title": "날개", "author": "이상", "year": 1936},
+    {"title": "오감도", "author": "이상", "year": 1934},
+    {"title": "진달래꽃", "author": "김소월", "year": 1925},
+    {"title": "서시", "author": "윤동주", "year": 1948}
+]
