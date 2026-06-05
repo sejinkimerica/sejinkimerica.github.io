@@ -26,7 +26,7 @@ function countWords(words) {
     return counts;
  }
 function removeStopwords(words, stopwords) { 
-    return words.filter(w => !stopWords.includes(w));
+    return words.filter(w => !stopwords.includes(w));
  }
 function topN(counts, n) { 
     return Object.entries(counts) // 객체 --> 배열로 변환
@@ -62,8 +62,6 @@ function drawChart(selector, top, color) {
      const counts = countWords(cleaned); 
      return topN(counts, 30); 
 }
-const frankTop = analyze(frankText, stopwords);
-const dracTop = analyze(dracText, stopwords);
 
 // --- 메인: 세 파일을 동시에 fetch ---
 Promise.all([
@@ -71,9 +69,9 @@ fetch("/data/frankenstein.txt").then(r => r.text()),
 fetch("/data/dracula.txt").then(r => r.text()),
 fetch("/data/stopwords-en.txt").then(r => r.text()),
 ]).then(([frankText, dracText, stopText]) => {
-    const stopwords = stopwordsText.split(/\s+/).filter(w => w.length >0);
-        const scarletTop = analyze(scarletText, stopwords);
-        const houndTop = analyze(houndText, stopwords);
+    const stopwords = stopText.split(/\s+/).filter(w => w.length >0);
+        const frankTop = analyze(frankText, stopwords);
+        const dracTop = analyze(dracText, stopwords);
         drawChart("#chart-frank", frankTop, "rgba(40, 167, 69, 0.6)");
         drawChart("#chart-drac", dracTop, "rgba(220, 53, 69, 0.6)");
 });
