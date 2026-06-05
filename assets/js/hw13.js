@@ -31,7 +31,7 @@ function removeStopwords(words, stopwords) {
 function topN(counts, n) { 
     return Object.entries(counts) // 객체 --> 배열로 변환
         .sort((a,b) =>b[1]-a[1]) // 빈도가 높은 순서대로 정렬
-        .slice(0,n); 5 // 상위 n개
+        .slice(0,n);  // 상위 n개
  }
 function drawChart(selector, top, color) { 
     const canvas = document.querySelector(selector);
@@ -72,6 +72,6 @@ fetch("/data/stopwords-en.txt").then(r => r.text()),
     const stopwords = stopText.split(/\s+/).filter(w => w.length >0);
         const frankTop = analyze(frankText, stopwords);
         const dracTop = analyze(dracText, stopwords);
-        drawChart("#chart-frank", frankTop, "rgba(40, 167, 69, 0.6)");
-        drawChart("#chart-drac", dracTop, "rgba(220, 53, 69, 0.6)");
+        drawChart("#chart-frankenstein", frankTop, "rgba(40, 167, 69, 0.6)");
+        drawChart("#chart-dracula", dracTop, "rgba(220, 53, 69, 0.6)");
 });
