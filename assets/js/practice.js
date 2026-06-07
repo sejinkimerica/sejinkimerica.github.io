@@ -73,3 +73,35 @@ fetch("/data/works.json")
             listBox.appendChild(li);
         }
     });
+
+
+// 21강
+function getWords(text) {
+    return text
+        .toLowerCase() // 소문자
+        .replace(/[]/g, "") // 구두점 제거
+        .split(/\s+/) // 공백 기준으로 자르기
+        .filter(w => w.length >0); // 빈 문자열 버리기
+}
+
+console.log(getWords("djdjfkdfj"));
+
+function countWords(words) {
+    const counts = {};
+    for (const word of words) {
+        if (counts[word] === undefined) {
+            counts[word] = 1;
+        } else {
+            counts[word] += 1;
+        }
+    }
+    return counts;
+}
+
+function countWords(words) {
+    const counts = {};
+    for (const w of words) {
+    counts[words] = (counts[words] || 0) + 1;}
+    return counts;}
+
+console.log(countWords(["love", "is", "love", "and", "love"]));
