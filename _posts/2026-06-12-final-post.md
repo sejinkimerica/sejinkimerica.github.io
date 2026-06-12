@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "학기를 정리하는 포스트입니다."
-date: 2026-06-12 15:45 +0900
+date: 2026-06-12 14:45 +0900
 categories: [수업, 일기]
 tags: [jekyll, markdown]
 author: 김세진
