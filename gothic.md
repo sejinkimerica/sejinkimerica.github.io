@@ -35,5 +35,6 @@ NLTK 기본 목록 외에 다음 7개의 단어를 `data/stopwords-custom.txt`�
 - **공통으로 도드라지는 단어**: 'time'
 - **한 작품에만 도드라지는 단어**와 그것이 시사하는 작품의 특성: Dracula와 달리 Frankenstein에서는 'father'라는 단어가 부각된다. 그것은 Frankenstein에서 과학자가 만들어낸 괴물이 과학자를 'father(아버지)'라고 불렀기 때문이다. 한편 Frankenstein에서와 달리 Dracula에서 두드러지는 단어는 'helsing'이다. 이는 작중 등장인물의 이름이 'helsing'이기 때문이며, 그가 작품에서 차지하는 비중이 높음을 시사한다.
 
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+{% include chartjs.html %}
+<script src="/assets/js/analysis.js"></script>
 <script src="/assets/js/gothic.js"></script>
