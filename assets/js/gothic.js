@@ -11,50 +11,7 @@ function extractBody(text) {
     // 시작 표시 다음 줄부터 끝 표시 직전까지
     return text.slice(startIdx, endIdx);
 } 
-function getWords(text) { 
-     return text
-        .toLowerCase()
-        .replace(/[.,!?;:'"‘’“”()\[\]_*]/g, " ")
-        .split(/\s+/)
-        .filter(w => w.length > 0);
- }
-function countWords(words) { 
-    const counts = {}; // 빈 객체 초기화
-    for (const word of words) {
-        counts[word] = (counts[word] || 0) + 1;
-    }
-    return counts;
- }
-function removeStopwords(words, stopwords) { 
-    return words.filter(w => !stopwords.includes(w));
- }
-function topN(counts, n) { 
-    return Object.entries(counts) // 객체 --> 배열로 변환
-        .sort((a,b) =>b[1]-a[1]) // 빈도가 높은 순서대로 정렬
-        .slice(0,n);  // 상위 n개
- }
-function drawChart(selector, top, color) { 
-    const canvas = document.querySelector(selector);
-    new Chart(canvas, {
-        type: "bar",
-        data: {
-            labels: top.map(item => item[0]), //단어
-            datasets: [{
-                label: "빈도",
-                data: top.map(item => item[1]), //빈도
-                backgroundColor: color
-            }]
-          },
-          options: {
-            indexAxis: "y",
-            maintainAspectRatio: false, // 비율 보존 안함 --> 아래로 긴 그림
-            scales: {
-                x: {beginAtZero: true}, // 막대그래프 옵션: 0부터 시작
-                y: {ticks: {autoSkip: false}}
-            }
-          }
-    })
- }
+
  function analyze(text, stopwords) { 
      const body= extractBody(text); 
      const words = getWords(body); 
