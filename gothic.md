@@ -1,7 +1,7 @@
 ---
 layout: page
-title: [숙제13] 텍스트 분석 도구 구현
-permalink: /hw13/
+title: 고딕 소설 비교 페이지
+permalink: /gothic/
 ---
 
 # [숙제13] 텍스트 분석 도구 구현
